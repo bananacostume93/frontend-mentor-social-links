@@ -1,38 +1,68 @@
 .App {
   text-align: center;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.social-card {
+  background: hsl(0, 0%, 12%);
+  height: 625px;
+  width: 400px;
+  border-radius: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.social-avatar {
+  border-radius: 50%;
+  width: 90px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.social-title-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 2.5rem;
+}
+
+.social-title-name {
+  margin: 20px 0 0 0;
+  color: white;
+  font-weight: 400;
+}
+
+.social-location {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: hsl(75, 94%, 57%);
+}
+
+.social-blurb {
+  margin-top: 1rem;
+  font-weight: 400;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.social-button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-button-group button {
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 75%;
+  margin-bottom: 1rem;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  font-weight: 700;
+}
+
+.social-button-group button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
 }
